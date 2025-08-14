@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>أفضل ثلاثي – حمد التام، كريستيانو رونالدو، كيليان مبابي</title>
+  <style>
+    :root{
+      --bg:#0b0e18;
+      --fg:#e9e9f2;
+      --muted:#a0a6b4;
+      --card:#12162a;
+      --line:rgba(255,255,255,.08);
+      --accent:#ffd166;
+      --g1:#7c4dff; --g2:#00c2ff;
+    }
+    *{box-sizing:border-box}
+    body{ margin:0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Naskh Arabic", "Noto Sans Arabic", Cairo, Tahoma, Arial, sans-serif; background:var(--bg); color:var(--fg); }
+    .wrap{ min-height:100svh; display:grid; place-items:center; padding:24px }
+    .card{ width:min(880px,96vw); background:var(--card); border:1px solid var(--line); border-radius:20px; padding:28px; box-shadow:0 20px 60px rgba(0,0,0,.35) }
+
+    .badge{ display:inline-flex; align-items:center; gap:8px; padding:8px 14px; border:1px solid var(--line); border-radius:999px; font-size:14px; color:var(--muted); }
+    h1{ margin:10px 0 6px; font-size:clamp(28px,5vw,44px); line-height:1.15; font-weight:800 }
+    .grad{ background:linear-gradient(90deg,var(--g1),var(--g2)); -webkit-background-clip:text; background-clip:text; color:transparent }
+    .sub{ margin:0; color:var(--muted); font-size:15px }
+
+    .hero-name{ margin:22px 0 6px; font-size:clamp(40px,7vw,72px); font-weight:900; letter-spacing:.5px;
+                background:linear-gradient(90deg,#e9e9f2,#b9dfff); -webkit-background-clip:text; background-clip:text; color:transparent; text-align:center }
+    .divider{ height:1px; background:var(--line); margin:16px 0 }
+
+    .trio{ display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin-top:10px }
+    .tag{ padding:14px 16px; border-radius:14px; border:1px solid var(--line); text-align:center; font-weight:700; background:rgba(255,255,255,.02) }
+    .tag small{ display:block; margin-top:4px; color:var(--muted); font-weight:500; font-size:12px }
+
+    .ribbon{ margin-top:18px; display:flex; justify-content:center }
+    .ribbon span{ padding:10px 18px; border-radius:999px; background:linear-gradient(90deg,#fff1a6,var(--accent)); color:#2a2a2a; font-weight:800; letter-spacing:.4px; border:1px solid rgba(0,0,0,.12) }
+
+    /* تحسين القراءة على الشاشات الصغيرة */
+    @media (max-width:520px){ .trio{ grid-template-columns:1fr } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <main class="card" aria-label="أفضل ثلاثي في العالم: حمد التام، كريستيانو رونالدو، كيليان مبابي">
+      <div class="badge">⚽️ تكوين بسيط ونظيف</div>
+      <h1>يقال عنهم <span class="grad">أفضل ثلاثي</span></h1>
+      <p class="sub">حمد التام × كريستيانو رونالدو × كيليان مبابي</p>
+
+      <!-- اسم واحد واضح بدون تكرار أو مؤثرات مزعجة -->
+      <div class="hero-name">في التاريخ </div>
+
+      <div class="divider"></div>
+
+      <section class="trio" aria-label="الأسماء الثلاثة">
+        <div class="tag">حمد التام<small>Hamad Al‑Tam</small></div>
+        <div class="tag">كريستيانو رونالدو<small>Cristiano Ronaldo</small></div>
+        <div class="tag">كيليان مبابي<small>Kylian Mbappé</small></div>
+      </section>
+
+      <div class="ribbon"><span>🏆 أفضل ثلاثي</span></div>
+    </main>
+  </div>
+</body>
+</html>
